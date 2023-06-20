@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cd3a011-723b-4c67-9f57-c89e1fe4f207" name="Changes" comment="with DDL">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/urlcutter/models/InitialUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/urlcutter/models/ShortenedUrl.java" afterDir="false" />
+    <list default="true" id="3cd3a011-723b-4c67-9f57-c89e1fe4f207" name="Changes" comment="with models">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.migration/V1_initial_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.migration/V1_initial_schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1687284187563</updated>
-      <workItem from="1687284188890" duration="2441000" />
+      <workItem from="1687284188890" duration="9873000" />
     </task>
     <task id="LOCAL-00001" summary="with DDL">
       <created>1687285918872</created>
@@ -119,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687285918872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="with models">
+      <created>1687286894671</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687286894671</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +145,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="with DDL" />
-    <option name="LAST_COMMIT_MESSAGE" value="with DDL" />
+    <MESSAGE value="with models" />
+    <option name="LAST_COMMIT_MESSAGE" value="with models" />
   </component>
 </project>
