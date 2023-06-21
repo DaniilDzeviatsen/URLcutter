@@ -1,42 +1,33 @@
-create table initial_link
+create table link
 (
-    id bigserial primary key,
-    full_url text not null unique
+    id        bigserial primary key,
+    full_url  text not null unique,
+    short_url text not null unique
 );
 
-create table shortened_link
-(
-    id bigserial primary key,
-    shortened_url text not null unique,
-    initial_url_id bigint references initial_link(id) on delete cascade
-);
 
-insert into initial_link (id, full_url)
-values (default, 'onliner1298912839012.com'),
-       (default, 'vkontakte781298127.com'),
-       (default, 'odnoklassniki2189182.com');
 
-insert into shortened_link(id, shortened_url, initial_url_id)
-values (default, '1', 1),
-       (default, '2', 2),
-       (default, '3', 3);
+insert into link (id, full_url, short_url)
+values (default, '/santehnik-—sverlit-mamashy-muzh-ne-dogadyvaetsa', '1'),
+       (default, 'porno365.bond/movie/36137', '1a'),
+       (default, 'odnoklassniki2189182.com', '1A');
 
-select
-full_url
-from initial_link
+
+
+select full_url, short_url
+from link
 where id = ?;
 
-select
-    shortened_url
-from shortened_link
-where initial_url_id = ?;
+select full_url
+from link
+where short_url = ?;
 
-select
-    initial_link.full_url,
-    initial_link.id,
-    shortened_url,
-    initial_url_id
-from initial_link
-join shortened_link iu on initial_link.id = iu.initial_url_id;
+select short_url
+from link
+where full_url = ?;
+
+select *
+from link;
+
 
 
